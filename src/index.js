@@ -2,12 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import Rutas from "./rutas";
+import App from "./App";
 import { Auth0Provider } from "@auth0/auth0-react";
 import ApolloWrapper from "./grapqhql/ApolloWrapper";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+/*
   <Auth0Provider
     domain="https://lti-equipamiento.us.auth0.com"
     clientId="zO2LXg47qvXtDAUibiXnrugRm0wtDpNm" //prod
@@ -22,5 +27,5 @@ root.render(
         <Rutas />
       </BrowserRouter>
     </ApolloWrapper>
-  </Auth0Provider>
+  </Auth0Provider>*/
 );

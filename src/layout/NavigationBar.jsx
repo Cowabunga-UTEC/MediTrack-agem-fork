@@ -33,7 +33,7 @@ import {
 } from "@mui/material";
 import { useQuery } from "@apollo/client";
 import { getUsuario } from "../grapqhql/Queries";
-import logosvg from "../assets/logosvg.svg";
+import logosvg from "../assets/logo.svg";
 
 const drawerWidth = 240;
 
@@ -169,7 +169,7 @@ export default function NavigationBar({ children }) {
               noWrap
               sx={{ flexGrow: 1, marginLeft: 1 }}
             >
-              AGEM
+              Meditrack 2.0
             </Typography>
 
             {!isAuthenticated ? (
