@@ -33,7 +33,7 @@ import {
 } from "@mui/material";
 import { useQuery } from "@apollo/client";
 import { getUsuario } from "../grapqhql/Queries";
-import logosvg from "../assets/logo.svg";
+import logosvg from "../assets/logosvg.svg";
 
 const drawerWidth = 240;
 

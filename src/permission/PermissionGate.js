@@ -2,6 +2,7 @@ import { cloneElement } from "react";
 import { PERMISSIONS } from "./PermissionMaps";
 import jwt_decode from "jwt-decode";
 import { useAuth0 } from "@auth0/auth0-react";
+import React from 'react';
 
 const hasPermission = ({ permissions, scopes }) => {
   const scopesMap = {};

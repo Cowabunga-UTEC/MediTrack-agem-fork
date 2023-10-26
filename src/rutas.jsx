@@ -10,6 +10,7 @@ import PageTicket from "./pages/PageTicket";
 import PageMantenimiento from "./pages/PageMantenimiento";
 import PageProfile from "./pages/PageProfile";
 import PageLanding from "./pages/PageLanding";
+import React from 'react';
 
 export default function Rutas() {
   const { isAuthenticated } = useAuth0();

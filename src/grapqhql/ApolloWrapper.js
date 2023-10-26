@@ -7,6 +7,7 @@ import {
 import { setContext } from "@apollo/client/link/context";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useEffect, useState } from "react";
+import React from 'react';
 
 function ApolloWrapper({ children }) {
   const { isAuthenticated, getAccessTokenSilently } = useAuth0();

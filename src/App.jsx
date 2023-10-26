@@ -11,6 +11,7 @@ import PageMantenimiento from "./pages/PageMantenimiento";
 import PageProfile from "./pages/PageProfile";
 import PageLanding from "./pages/PageLanding";
 import LoginPage from "./pages/LoginPage";
+import React from 'react';
 
 export default function App() {
   //const { isAuthenticated } = useAuth0();
@@ -35,41 +36,31 @@ export default function App() {
               <Route
                 path="/dashboard"
                 element={
-                  <PermissionsGate scopes={[SCOPES.canViewDashboard]}>
-                    <Dashboard />
-                  </PermissionsGate>
+                  <Dashboard />
                 }
               />
               <Route
                 path="/equipo"
                 element={
-                  <PermissionsGate scopes={[SCOPES.canViewEquipo]}>
-                    <PageEquipo />
-                  </PermissionsGate>
+                  <PageEquipo />
                 }
               />
               <Route
                 path="/usuario"
                 element={
-                  <PermissionsGate scopes={[SCOPES.canViewUsuario]}>
-                    <PageUsuario />
-                  </PermissionsGate>
+                  <PageUsuario />
                 }
               />
               <Route
                 path="/ticket"
                 element={
-                  <PermissionsGate scopes={[SCOPES.canViewTicket]}>
-                    <PageTicket />
-                  </PermissionsGate>
+                  <PageTicket />
                 }
               />
               <Route
                 path="/mantenimiento"
                 element={
-                  <PermissionsGate scopes={[SCOPES.canViewMantenimiento]}>
-                    <PageMantenimiento />
-                  </PermissionsGate>
+                  <PageMantenimiento />
                 }
               />
             </>
